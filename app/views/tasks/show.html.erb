@@ -1,0 +1,9 @@
+<%= link_to 'See all tasks', tasks_path %>
+
+<h1>This this the task n° <%= @task.id %></h1>
+<p>Created at: <%= @task.created_at %></p>
+<p>Last update: <%= @task.updated_at %></p>
+<p><%= @task.description %></p>
+<p>Status: "<%= @task.done %>"</p>
+
+<%= link_to 'Edit', edit_task_path %>
